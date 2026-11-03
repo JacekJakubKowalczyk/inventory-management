@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -126,6 +127,46 @@ export default {
       status: 'ステータス',
       expectedDelivery: '予定配達日',
       actualDelivery: '実際の配達日'
+    },
+    submitted: {
+      title: '提出済み注文',
+      empty: '提出済みの補充注文はまだありません。',
+      loadError: '提出済み注文の読み込みに失敗しました',
+      orderNumber: '注文番号',
+      items: '品目',
+      total: '合計',
+      submittedDate: '提出日',
+      leadTime: 'リードタイム',
+      leadTimeDays: '{count}日',
+      expectedDelivery: '予定配達日'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予算を選択し、推奨される補充購入を確認します',
+    budget: '予算',
+    budgetHint: '優先順位の高い順に、残り予算に収まる品目が追加されます。',
+    selectedItems: '推奨品目',
+    totalCost: '合計コスト',
+    remaining: '残り予算',
+    estimatedNote: '* 単価は概算です。',
+    estimatedBadge: '概算',
+    empty: '現在の予算に収まる推奨品目はありません。',
+    noRecommendations: '利用可能な補充推奨はありません。',
+    loadError: '補充推奨の読み込みに失敗しました',
+    placeOrder: '注文する',
+    submitting: '送信中...',
+    orderError: '注文の送信に失敗しました',
+    orderSuccess: '注文 {orderNumber} を送信しました。予定配達日: {date}。',
+    table: {
+      sku: 'SKU',
+      name: '品目名',
+      trend: 'トレンド',
+      quantity: '数量',
+      unitCost: '単価',
+      lineCost: '明細金額'
     }
   },
 
